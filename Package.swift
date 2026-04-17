@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "CommentPrimitive",
     platforms: [
-        .macOS(.v15),
+        .macOS(.v14),
         .iOS(.v17),
     ],
     products: [
