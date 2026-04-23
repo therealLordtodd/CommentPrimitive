@@ -2,7 +2,7 @@
 
 This primitive is a member of the Document Editor primitive family. It provides review-comment model and UI support with typed anchors, quote selectors, threads, and status transitions.
 
-**Note:** CommentPrimitive is one of three primitives (with TrackChangesPrimitive and BookmarkPrimitive) that independently implement an **anchor pattern** — a typed anchor + quote selector used to pin review annotations to document positions. Whether these three should converge on a shared `AnchorKit` or remain parallel by design is a [pending family-level decision](../docs/plans/2026-04-19-document-editor-dependency-audit.md#6-pending-coordinated-changes).
+**Note:** CommentPrimitive is one of three primitives (with TrackChangesPrimitive and BookmarkPrimitive) that independently implement an **anchor pattern** — a typed anchor + quote selector used to pin review annotations to document positions. Whether these three should converge on a shared `AnchorKit` or remain parallel by design is a [pending family-level decision](../RichTextEditorKit/docs/plans/2026-04-19-document-editor-dependency-audit.md#6-pending-coordinated-changes).
 
 ## Conventions This Primitive Participates In
 
@@ -29,7 +29,7 @@ This primitive is a member of the Document Editor primitive family. It provides 
 
 1. **Anchor model changes**: also consider whether the change should unify with TrackChangesPrimitive's and BookmarkPrimitive's anchor models (family convergence question — §6 of dep audit).
 2. Changes to thread/status model: affects DocumentPrimitive + hosts rendering review state.
-3. Consult [dependency audit](../docs/plans/2026-04-19-document-editor-dependency-audit.md).
+3. Consult [dependency audit](../RichTextEditorKit/docs/plans/2026-04-19-document-editor-dependency-audit.md).
 4. Document ripple impact in the commit/PR.
 
 ## Scope of Membership
