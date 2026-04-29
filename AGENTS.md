@@ -3,6 +3,9 @@
 ## Purpose
 CommentPrimitive owns portable review comments, typed anchors, quote selectors, reply threads, status transitions, and observable comment mutations.
 
+## UI Posture
+No UI surface — pure value-type primitive with no SwiftUI imports or `View` definitions. Hosts render comments however they like; the primitive ships only models, anchors, selectors, and the observable store.
+
 ## Key Directories
 - `Sources/CommentPrimitive`: Comment models, anchors, quote selector, and `CommentStore`.
 - `Tests/CommentPrimitiveTests`: Model, selector, and store behavior tests.
