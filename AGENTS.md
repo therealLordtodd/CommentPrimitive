@@ -6,6 +6,9 @@ CommentPrimitive owns portable review comments, typed anchors, quote selectors, 
 ## UI Posture
 No UI surface — pure value-type primitive with no SwiftUI imports or `View` definitions. Hosts render comments however they like; the primitive ships only models, anchors, selectors, and the observable store.
 
+## Security Posture
+No credential, network, filesystem, persistence, or server-authority surface lives in this package. Hosts own storage, sync, permissions, identity, and any policy around who may create, edit, resolve, or transmit comments.
+
 ## Key Directories
 - `Sources/CommentPrimitive`: Comment models, anchors, quote selector, and `CommentStore`.
 - `Tests/CommentPrimitiveTests`: Model, selector, and store behavior tests.
